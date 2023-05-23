@@ -1,0 +1,10 @@
+https://blog.openreplay.com/doing-animations-in-react-with-framer-motion/
+
+
+
+Docs:
+- https://www.framer.com/motion/animate-presence/ 
+- https://github.com/Ben888GitHub/framer-motion-usages/blob/main/src/App.js
+- https://github.com/Ben888GitHub/framer-motion-usages/blob/second-example/src/App.js 
+- ----------------------------------------------------------------
+- https://www.framer.com/motion/scroll-animations/
