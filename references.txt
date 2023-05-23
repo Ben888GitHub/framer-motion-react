@@ -8,3 +8,4 @@ Docs:
 - https://github.com/Ben888GitHub/framer-motion-usages/blob/second-example/src/App.js 
 - ----------------------------------------------------------------
 - https://www.framer.com/motion/scroll-animations/
+- https://betterprogramming.pub/smooth-animations-with-react-and-framer-motion-c272b6f22f67
