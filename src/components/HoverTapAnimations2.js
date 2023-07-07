@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 
 const HoverTapAnimations2 = () => {
@@ -27,20 +27,24 @@ const HoverTapAnimations2 = () => {
 				onClick={() => setShowCard(!showCard)}
 			>
 				<motion.h4 layout="position">Hover or click</motion.h4>
-				{showCard && (
-					<motion.p
-						style={{ width: '600px' }}
-						initial={{ opacity: 0 }}
-						animate={{
-							opacity: 1
-						}}
-					>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
-						error reiciendis iure architecto qui magni, excepturi voluptatum
-						repudiandae nihil rerum eveniet pariatur ipsa velit similique et
-						aliquam, deserunt totam explicabo.
-					</motion.p>
-				)}
+				<AnimatePresence>
+					{showCard && (
+						<motion.p
+							style={{ width: '600px' }}
+							initial={{ opacity: 0 }}
+							animate={{
+								opacity: 1
+							}}
+							exit={{ opacity: 0, transition: { duration: 3 } }}
+							transition={{ duration: 3 }}
+						>
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+							error reiciendis iure architecto qui magni, excepturi voluptatum
+							repudiandae nihil rerum eveniet pariatur ipsa velit similique et
+							aliquam, deserunt totam explicabo.
+						</motion.p>
+					)}
+				</AnimatePresence>
 			</motion.div>
 		</div>
 	);

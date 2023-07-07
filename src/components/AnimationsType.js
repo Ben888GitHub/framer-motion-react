@@ -61,6 +61,7 @@ const AnimationsType = () => {
 									y: setY,
 									opacity: setOpacity
 								}}
+								transition={{ duration: 3 }} // ** only this shape animate with duration
 							></motion.div>
 						);
 					} else if (currentShapeIndex === 1) {

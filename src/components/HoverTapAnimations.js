@@ -12,8 +12,10 @@ const HoverTapAnimations = () => {
 					scale: 1.5,
 					opacity: 1
 				}}
+				// transition={{ duration: 5 }}
 				whileTap={{
-					scale: 2
+					scale: 2.5
+					// transition: { duration: 3 }
 				}}
 			>
 				While Tap
